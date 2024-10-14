@@ -5,7 +5,7 @@ import 'weather_model.dart';
 import 'package:shared_preferences/shared_preferences.dart'; 
 
 final weatherProvider = FutureProvider.family<Weather, String>((ref, cityName) async {
-  const apiKey = 'f97ef50d255f411a64f802719315b8aa'; 
+  const apiKey = ''; //use your own api key here
 
   // Try to load cached weather data
   final prefs = await SharedPreferences.getInstance();
